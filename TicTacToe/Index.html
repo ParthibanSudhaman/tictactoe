@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tic Tac Toe</title>
+    <!-- Styles -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="">Tic Tac Toe</h1>
+        <p>A place where you can have fun!!!</p>
+    </div>
+    
+    <!-- Partials container -->
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <!-- General scripts section -->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+
+    <!-- Application related scripts -->
+    <script src="app.js"></script>
+    <script src="Controllers/TicTacToeController.js"></script>
+    <script src="Services/TicTacToeFactory.js"></script>
+    <script src="Services/SignalRCommunicationService.js"></script>
+</body>
+</html>
